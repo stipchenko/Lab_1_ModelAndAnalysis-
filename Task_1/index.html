@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Distance Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <h2>Distance Calculator - Rostyslav Demchenko</h2>
+
+      <div class="section">
+        <div class="title">Integer Numbers</div>
+        <div>X = -3, Y = 4</div>
+        <button onclick="calculateInteger()">Calculate Distance</button>
+        <div id="integerResult" class="result"></div>
+      </div>
+
+      <div class="section">
+        <div class="title">Fractional Numbers</div>
+        <div>X = -8/5, Y = -2/6</div>
+        <button onclick="calculateFraction()">Calculate Distance</button>
+        <div id="fractionResult" class="result"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

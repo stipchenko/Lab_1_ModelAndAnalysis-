@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Function Distance Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Distance between f(x) = x and g(x) = -x on [0,1]</h2>
+      <div class="canvas-container">
+        <canvas id="functionGraph"></canvas>
+      </div>
+      <div class="results">
+        <div class="metric">
+          <h3>Euclidean Distance</h3>
+          <div id="euclidean" class="value"></div>
+        </div>
+        <div class="metric">
+          <h3>Manhattan Distance</h3>
+          <div id="manhattan" class="value"></div>
+        </div>
+        <div class="metric">
+          <h3>Chebyshev Distance</h3>
+          <div id="chebyshev" class="value"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

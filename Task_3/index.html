@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamming Distance Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator-card">
+        <div class="header">
+          <h1>Binary Distance Calculator</h1>
+          <p class="subtitle">
+            Calculate Hamming distance between binary sequences
+          </p>
+        </div>
+
+        <div class="input-section">
+          <div class="input-group">
+            <label for="seq1">First Binary Sequence</label>
+            <input
+              type="text"
+              id="seq1"
+              placeholder="Enter first sequence"
+              value="01101101"
+            />
+            <div class="sequence-display" id="display1"></div>
+          </div>
+
+          <div class="input-group">
+            <label for="seq2">Second Binary Sequence</label>
+            <input
+              type="text"
+              id="seq2"
+              placeholder="Enter second sequence"
+              value="11110010"
+            />
+            <div class="sequence-display" id="display2"></div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn primary" onclick="calculateDistance()">
+            Calculate Distance
+          </button>
+          <button class="btn secondary" onclick="loadVariant()">
+            Load Variant 4
+          </button>
+        </div>
+
+        <div id="error" class="error-message"></div>
+
+        <div class="result-section">
+          <div class="comparison" id="comparison"></div>
+          <div class="distance-result" id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
